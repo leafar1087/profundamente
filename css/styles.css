@@ -1,0 +1,565 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #fefefe;
+}
+
+body header{
+    display: flex;
+    flex-direction: column;
+    background-image: url('../images/principal_4.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);*/
+    /*background-image: url("../images/portada.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;*/
+    
+    
+}
+
+body header.full-screen-section{
+    height: 100vh;
+}
+
+
+body header .container{
+    width: 70%;
+    margin: 0 auto;
+   
+}
+
+
+
+body header .toolbar-area{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+    justify-content: space-between;
+    
+}
+
+body header .toolbar-area .toolbar-contact,
+body header .toolbar-area .toolbar-social{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 1rem;
+    justify-content: center;
+    color: whitesmoke;
+    
+}
+
+body header .toolbar-area .toolbar-contact i{
+    
+    display: flex;
+    text-align: center;
+    align-content: center;
+    font-size: 1.5rem;
+}
+
+body header .toolbar-area .toolbar-contact i span{
+    margin: 0 1rem 0 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+
+    
+}
+
+body header .toolbar-area .toolbar-social i{
+    margin: 0 1rem 0 1rem;
+    font-size: 1.5rem;
+    
+}
+
+body header .menu{
+    display: flex;
+    
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    color: whitesmoke;
+    
+} 
+
+body header .menu .logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    
+}
+body header .menu .logo img{
+    width: 100px;
+    margin-right: 10px;
+    border-radius: 50%;
+    
+}
+
+body header .menu .logo span{
+    font-size: 1.4rem;
+    font-weight: 700;
+    
+}
+
+body header .menu nav ul{
+    display: flex;
+    list-style: none; /* Elimina los puntos de lista */
+    
+    
+  }
+  
+  body header .menu nav ul  li {
+    margin-bottom: 10px; /* Espacio entre los elementos del menú */
+    padding: 10px 0;
+    
+    width: 150px;
+    text-align: center;
+  }
+  
+  body header .menu nav ul li a {
+    text-decoration: none; /* Elimina la decoración de texto subrayado */
+    color: whitesmoke; /* Cambia el color del texto a tu preferencia */
+    font-weight: 500;
+    font-size: 1.2rem;
+  }
+
+
+  body header .menu a,
+  body header .welcome a {
+    text-decoration: none;
+  }
+  
+  body header .menu button,
+  body header .welcome button,
+  body main .about-us .container .about-us-Detail .about-us-Contact button,
+  body footer .container button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #b87869;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  body header .menu button:hover,
+  body header .welcome button:hover,
+  body main .about-us .container .about-us-Detail .about-us-Contact button:hover,
+  body footer .container button:hover {
+    background-color: #e0d283;
+  }
+
+  body header .welcome{
+    color: whitesmoke;
+    width: 50%;
+    margin-top: 200px;
+    line-height: 2rem;
+  }
+
+  body header .welcome h3{
+    font-size: 1.4rem;
+  }
+
+  body header .welcome h2{
+    font-size: 5rem;
+    line-height: 7rem;
+  }
+
+  body header .welcome h4{
+    font-size: 1rem;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+    width: 80%;
+    
+  }
+
+  body main .about-us .container{
+    width: 70%;
+    margin: 0 auto;
+    padding: 4rem 0;
+    
+    display: flex;
+    align-items: center;
+    
+  }
+
+  body main .about-us .container .about-us-Detail{
+    width: 50%;
+    margin: 0 auto;
+    
+    
+  }
+
+  body main .about-us .container .about-us-Detail .about-us-Contact{
+    display: flex;
+    align-items: center;
+    
+  }
+
+  body main .about-us .container .about-us-Detail h3{
+    font-size: 1.4rem;
+    line-height: 3rem;
+    color: #b87869;
+    font-weight: 400;
+  }
+
+  body main .about-us .container .about-us-Detail h2{
+    font-size: 3rem;
+    line-height: 4rem;
+    text-align: left;
+    color: #b87869;
+  }
+
+  body main .about-us .container .about-us-Detail p{
+    font-size: 1rem;
+    line-height: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+
+  body main .about-us .container .about-us-Detail .about-us-Contact button{
+    margin-right: 2rem;
+  }
+
+  body main .about-us .container .about-us-Detail .about-us-Contact p{
+    line-height: 1rem;
+  }
+
+  body main .about-us .container .about-us-Detail .about-us-Contact .contact{
+    display: flex;
+    align-items: center;
+  }
+
+  body main .about-us .container .about-us-Detail .about-us-Contact .contact .phone{
+    background-color: #b87869;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 1rem;
+  }
+
+  body main .about-us .container .about-us-Detail .about-us-Contact .contact .phone i{
+    font-size: 2rem;
+    color: white;
+    font-weight: 300;
+    
+  }
+
+  body main .types{
+    background-color: #fcf8e5;
+  }
+
+  body main .types .container{
+    width: 70%;
+    margin: 0 auto;
+    padding: 4rem 0;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  body main .types h3{
+    font-size: 1.4rem;
+    color: #b87869;
+    font-weight: 400;
+  }
+
+  body main .types h2{
+    color: #5B3128;
+    font-size: 3rem;
+    font-weight: 700;
+    
+    text-align: center;
+  }
+
+  body main .types .types-details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+  }
+
+  body main .types .types-details .type-detail {
+    background-color: #fefefe;
+    border-radius: 1rem;
+    margin: 2rem 1rem 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2rem;
+  }
+  body main .types .types-details .type-detail .img{
+    background-color: #b87869;
+    width: 150px;
+    height: 150px;
+    border: 5px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border-color: #e0d283;
+    margin: 2rem;
+    
+  }
+
+  body main .types .types-details .type-detail .img img{
+    width: 50%;
+  }
+
+  body main .types .types-details .type-detail h2{
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+  }
+
+  body main .types .types-details .type-detail p{
+    
+    margin-top: 1rem;
+    text-align: center;
+    line-height: 1.7rem;
+  }
+
+  body main .types .types-details .type-detail p a{
+    text-decoration: none;
+    color: #b87869;
+    font-size: 0.8rem;
+
+  }
+  /*elections*/
+
+  body main .election{
+    background-color: #fefefe;
+  }
+
+  body main .election .container{
+    width: 70%;
+    margin: 0 auto;
+    padding: 4rem 0;
+    
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+    justify-content:center;
+  }
+
+  body main .election .election-description{
+    width: 50%;
+    padding-top: 2rem;
+    
+  }
+
+  body main .election .election-description h3{
+    font-size: 1.4rem;
+    color: #b87869;
+    font-weight: 400;
+  }
+
+  body main .election .election-description h2{
+    color: #5B3128;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: left;
+    
+    width: 80%;
+  }
+
+  
+
+  body main .election .election-description .election-details{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin-right: 2rem;
+   
+  }
+
+  body main .election .election-description .election-details .election-detail{
+    display: flex;
+    align-items: center;
+    
+    width: 48%;
+    margin: 2rem 0;
+  }
+
+  body main .election .election-description .election-details .election-detail .img{
+    background-color: #b87869;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 80%;
+  }
+
+  body main .election .election-description .election-details .election-detail .img img{
+    width: 25px;
+    margin: 0 auto;
+  }
+
+  body main .election .election-description .election-details .election-detail h2{
+    font-size: 1rem;
+    text-align: left;
+    align-items: center;
+    margin-left: 1rem;
+  }
+
+  body main .election .election-description p{
+    width: 80%;
+    padding-top: 1.5rem;
+    
+  }
+  
+  /*testimonmials*/
+
+  body main .testimonial{
+    background-color: #5B3128;
+    color: #fefefe;
+  }
+
+  body main .testimonial .container{
+    width: 70%;
+    margin: 0 auto;
+    padding: 5rem 0;
+    
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content:center;
+  }
+
+  body main .testimonial .testimonial-description{
+    
+    padding-top: 2rem;
+    text-align: center;
+  }
+
+  body main .testimonial .testimonial-description h3{
+    font-size: 2rem;
+    font-weight: 400;
+  }
+
+  body main .testimonial .testimonial-description h2{
+    
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    
+    
+  }
+
+  body main .testimonial .testimonial-description .testimonial-details{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+  }
+
+  body main .testimonial .testimonial-description .testimonial-details .testimonial-detail{
+    
+    width: 35%;
+    margin-left: 1rem;
+    line-height: 1.7rem;
+    padding-top: 2rem;
+    background-color: #b87869;
+    border-radius: 20px;
+  }
+
+  body main .testimonial .testimonial-description .testimonial-details .testimonial-detail .testimonial-contact{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+  }
+
+  body main .testimonial .testimonial-description .testimonial-details .testimonial-detail .testimonial-contact .contact-name{
+    
+    margin-left: 1rem;
+  }
+
+  body main .testimonial .testimonial-description .testimonial-details .testimonial-detail .testimonial-contact img{
+    width: 80px;
+    border-radius: 80%;
+  }
+
+  body main .testimonial .testimonial-description .testimonial-details .testimonial-detail .testimonial-contact h2{
+    font-size: 1rem;
+  }
+
+  body main .testimonial .testimonial-description .testimonial-details .testimonial-detail .testimonial-contact h3{
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  body footer{
+    background-color: #fefefe;
+    margin: 5rem 0 5rem 0;
+  }
+
+  body footer .container{
+    width: 70%;
+    margin: 0 auto;
+  }
+  
+  
+
+body footer .container .menu{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+body footer .container .logo{
+  display: flex;
+  align-items: center;
+}
+
+body footer .container .logo img{
+  width: 100px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+body footer .container .logo span{
+    font-size: 1.4rem;
+    font-weight: 700;
+    
+}
+
+body footer .container .toolbar-social{
+    
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-content: center;
+  /*font-size: 1.5rem;*/
+}
+
+body footer .container .toolbar-social i{
+    
+  font-size: 1.5rem;
+  margin: 0 1rem;
+}
+  
